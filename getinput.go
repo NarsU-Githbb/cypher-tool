@@ -11,12 +11,13 @@ func getInput() (toEncrypt bool, encoding string, message string) {
 
 	reader := bufio.NewReader(os.Stdin)
 
-	fmt.Println("Welcome to the Cypher Tool!")
-	fmt.Print("Select operation (1/2): \n 1. Encrypt. \n 2. Decrypt. \n")
+	fmt.Println("Welcome to the Cypher Tool!\n")
+	fmt.Print("Select operation (1/2): \n 1. Encrypt. \n 2. Decrypt. \n ")
 
 	for {
 		input, _ := reader.ReadString('\n')
 		input = strings.TrimSpace(input)
+		fmt.Println()
 
 		switch input {
 		case "1":
@@ -30,20 +31,20 @@ func getInput() (toEncrypt bool, encoding string, message string) {
 		break
 	}
 
-
-	fmt.Print("Select operation (2/2): \n 1. ROT13. \n 2. Reverse. \n 3.Vowelskip. \n")
+	fmt.Print("Select operation (2/2): \n 1. ROT13. \n 2. Reverse. \n 3. Vowelskip. \n ")
 
 	for {
 		input, _ := reader.ReadString('\n')
 		input = strings.TrimSpace(input)
+		fmt.Println()
 
 		switch input {
 		case "1":
 			encoding = "ROT13"
 		case "2":
-			encoding = "Reverse"
+			encoding = "reverse"
 		case "3":
-			encoding = "Vowelskip"
+			encoding = "vowelskip"
 		default:
 			fmt.Print("Input is invalid. Please try again with patience and courage!\n")
 			continue
@@ -51,11 +52,10 @@ func getInput() (toEncrypt bool, encoding string, message string) {
 		break
 	}
 
-
-	fmt.Print("Enter the message: ")
+	fmt.Print("Enter the message: \n")
 	input, _ := reader.ReadString('\n')
 	input = strings.TrimSpace(input)
-	
+	fmt.Println()
 
 	message = input
 	return toEncrypt, encoding, message

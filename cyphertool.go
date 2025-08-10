@@ -11,10 +11,10 @@ func main() {
 	case "ROT13":
 		result = encrypt_rot13(message)
 
-	case "Reverse":
+	case "reverse":
 		result = Encrypt_reverse(message)
 
-	case "Vowelskip":
+	case "vowelskip":
 		if toEncrypt == true {
 			result = encrypt_vowel_skip(message)
 		} else if toEncrypt == false {
@@ -22,5 +22,7 @@ func main() {
 		}
 	}
 
-	fmt.Println("Decrypted message using reverse:\n", result)
+	fmt.Print("Decrypted message using ", encoding)
+	fmt.Print(":\n", result)
+	fmt.Print("\n")
 }
