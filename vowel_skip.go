@@ -60,7 +60,7 @@ func decrypt_wovel_skip(s string) string {
 
 func main() {
 
-	encrypting := encrypt_vowel_skip("abce")
+	encrypting := encrypt_vowel_skip(" abe")
 	decrypting := decrypt_wovel_skip("ebci")
 	fmt.Println(encrypting)
 	fmt.Println(decrypting)
