@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -55,14 +54,5 @@ func decrypt_wovel_skip(s string) string {
 	answer = strings.Join(parts, "")
 
 	return answer
-
-}
-
-func main() {
-
-	encrypting := encrypt_vowel_skip(" abe")
-	decrypting := decrypt_wovel_skip("ebci")
-	fmt.Println(encrypting)
-	fmt.Println(decrypting)
 
 }

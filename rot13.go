@@ -1,9 +1,6 @@
 package main
 
 import (
-	"bufio"
-	"fmt"
-	"os"
 	"strings"
 )
 
@@ -24,19 +21,4 @@ func encrypt_rot13(s string) string {
 
 func decrypt_rot13(s string) string {
 	return encrypt_rot13(s)
-}
-
-func main() {
-	reader := bufio.NewReader(os.Stdin)
-
-	fmt.Println("ROT13 Encryption/Decryption Tool")
-	fmt.Print("Enter your message: ")
-	input, _ := reader.ReadString('\n')
-	input = strings.TrimSpace(input)
-
-	encrypted := encrypt_rot13(input)
-	decrypted := decrypt_rot13(encrypted)
-
-	fmt.Println("Encrypted:", encrypted)
-	fmt.Println("Decrypted:", decrypted)
 }

@@ -1,11 +1,11 @@
-package cypher
+package main
 
 func Encrypt_reverse(s string) string {
 
 	runes := []rune(s)
 	var result string
 
-	for i := 0; i < len(s)-1; i++ {
+	for i := 0; i < len(s); i++ {
 
 		if runes[i] >= 'a' && runes[i] <= 'z' {
 			runes[i] = 'a' + ('z' - runes[i])
