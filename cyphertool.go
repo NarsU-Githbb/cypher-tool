@@ -18,7 +18,7 @@ func main() {
 		if toEncrypt == true {
 			result = encrypt_vowel_skip(message)
 		} else if toEncrypt == false {
-			result = decrypt_wovel_skip(message)
+			result = decrypt_vowel_skip(message)
 		}
 	}
 

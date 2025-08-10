@@ -31,7 +31,7 @@ func encrypt_vowel_skip(s string) string {
 
 }
 
-func decrypt_wovel_skip(s string) string {
+func decrypt_vowel_skip(s string) string {
 
 	vowelMap := map[string]string{
 
