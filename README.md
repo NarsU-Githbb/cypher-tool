@@ -2,9 +2,9 @@ Tool for encrypting / decrypting text
 
 How does it work: 
 
-1. Clone the depository writing "git clone https://gitea.kood.tech/brunozambrano/cypher.git" into the terminal.
+1. Clone the depository.
 
-2. Go to the depository directory called cypher & write "go run ." to use the tool.
+2. Go to the depository directory called cypher-tool & write "go run ." to use the tool.
 
 3. You can first choose to ether decrypt or encrypt your text
 
